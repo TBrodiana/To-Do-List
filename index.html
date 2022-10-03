@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>To Do List</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:200,300,400,700|Quicksand" rel="stylesheet"/>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container">
+
+    <div class="header">
+      <h2 class="title">To Do List:</h2>
+      <input type="text" class="add_new">
+      <button class="addbtn">Add</button>
+      <div class="select">
+        <select name="filterToDos" class="filterToDos">
+          <option value="all">All</option>
+          <option value="uncompleted">Uncompleted</option>
+          <option value="completed">Completed</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="todocontainer">
+
+      <ul class="todolist">
+
+        <div class="item">
+          <li class="todo-item"> 🔸 Pick up Grandma at the airport</li>
+          <button class="completebtn">✔️</button>
+          <button class="deletebtn">✖️</button>
+        </div>
+        <div class="item">
+          <li class="todo-item"> 🔸 Buy cat food</li>
+          <button class="completebtn">✔️</button>
+          <button class="deletebtn">✖️</button>
+        </div>
+        <div class="item">
+          <li class="todo-item"> 🔸 Watch The Office</li>
+          <button class="completebtn">✔️</button>
+          <button class="deletebtn">✖️</button>
+        </div>
+        <div class="item">
+          <li class="todo-item"> 🔸 Drink more water</li>
+          <button class="completebtn">✔️</button>
+          <button class="deletebtn">✖️</button>
+        </div>
+      </ul>
+    </div>
+  </div>
+
+  <script  src="./script.js"></script>
+
+</body>
+</html>

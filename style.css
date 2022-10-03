@@ -1,0 +1,149 @@
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Quicksand', sans-serif;
+}
+
+html,
+body {
+	height: 100%;
+	min-width: 320px;
+}
+body {
+  margin: 0;
+  background: url("./img/bg_mountains.png") center no-repeat;
+  height: 100vh;
+}
+.container{
+  background-color: #ffffff;
+  width: 50%;
+  height: 60%;
+  min-width: 400px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 15px;
+  box-shadow: 25px 25px 30px rgba(0, 0, 0, 0.1);
+}
+.header {
+  background-color: #a29bfe;
+  color: white;
+  text-align: center;
+  padding-bottom: 0.5em;
+  border-top-left-radius: 0.7em;
+  border-top-right-radius: 0.7em;
+	box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+.header h2 {
+  margin: 0 0 10px 0;
+  font-size: 2rem;
+  padding-top: 0.5em;
+	font-weight: 700;
+	text-decoration: underline;
+	text-transform: uppercase;
+	text-underline-position: under;
+	padding-bottom: 2px;
+}
+
+input {
+  margin-right: 1vw;
+  padding: 10px 10vw;
+  border-radius: 10px;
+  border: 1px solid #6c5ce7;
+}
+.todocontainer{
+  background-color: #ffffff;
+	border-bottom-left-radius: 0.7em;
+  border-bottom-right-radius: 0.7em;
+}
+ul {
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  color:#0984e3;
+  padding: 8px;
+  transition: all 1s ease;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  border: none;
+  padding: 10px;
+  margin-left: 1vw;
+}
+
+.completebtn {
+  background: #55efc4;
+	border-radius: 15px;
+}
+
+.deletebtn {
+  background: #fab1a0;
+	border-radius: 15px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.todo-item {
+  width: 90vw;
+  font-weight: 600;
+}
+
+.addbtn {
+  background: #ffeaa7;
+  color: #6c5ce7;
+	font-weight: bold;
+  padding: 10px;
+  border: 1px solid #ffeaa7;
+  text-transform: uppercase;
+  border-radius: 14px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+.addbtn:hover{
+  background: #fdcb6e;
+  border: 1px solid #fdcb6e;
+}
+select {
+  appearance: none;
+  outline: none;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearence: none;
+}
+
+.select {
+  overflow: hidden;
+  position: relative;
+  margin: 1rem;
+
+}
+
+select {
+  width: 10rem;
+  cursor: pointer;
+  color: #6c5ce7;
+  padding: 1rem;
+  border-radius: 0.4rem;
+	box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.select::after {
+  content: "\25BC";
+  color: white;
+  pointer-events: none;
+  margin: 0 -3rem;
+  padding: 1rem;
+  background: #ffeaa7;
+  border-radius: 0.5rem;
+}
